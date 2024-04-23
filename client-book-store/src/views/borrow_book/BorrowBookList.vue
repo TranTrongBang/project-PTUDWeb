@@ -19,7 +19,7 @@
                                 <option disabled value="">Chọn Người dùng</option>
                                 <option v-for="docGia in docGias" :key="docGia._id" :value="docGia._id">{{
                                 docGia.holot }}
-                                    <!-- {{docGia.ten }} -->
+                                     {{docGia.ten }} 
                                 </option>
                             </select>
                         </div>
@@ -57,7 +57,7 @@
                                     <span v-if="borrowbook.ngaytra">{{ formatDate(borrowbook.ngaytra) }}</span>
                                     <span v-else class="text-danger">Chưa trả sách</span>
                                 </td>
-                                 <td>{{ borrowbook.madocgia.holot }} <!--{{ borrowbook.madocgia.ten }} --></td>
+                                 <td>{{ borrowbook.madocgia.holot }} {{ borrowbook.madocgia.ten }} </td>
                                 <td>
                                     <button v-if="!borrowbook.ngaytra" @click="handleReceive(borrowbook._id)"
                                         class="btn btn-outline-success mx-1">
