@@ -1,6 +1,6 @@
 <template>
     <layout-div>
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="text-center mt-5 mb-3">Sách</h2>
             <div class="card">
                 <div class="card-header">
@@ -10,7 +10,7 @@
                             <select v-model="search.sachId" class="form-control" id="sachId" name="sachId">
                                 <option disabled value="">Chọn Sách</option>
                                 <option v-for="book in books" :key="book._id" :value="book._id">{{
-                                    book.tensach }} </option>
+                                book.tensach }} </option>
                             </select>
                         </div>
                         <div class="form-group ml-3" style="flex: 1;">
@@ -18,8 +18,9 @@
                             <select v-model="search.docgiaId" class="form-control" id="docgiaId" name="docgiaId">
                                 <option disabled value="">Chọn Người dùng</option>
                                 <option v-for="docGia in docGias" :key="docGia._id" :value="docGia._id">{{
-                                    docGia.holot }} {{
-                                        docGia.ten }}</option>
+                                docGia.holot }}
+                                    <!-- {{docGia.ten }} -->
+                                </option>
                             </select>
                         </div>
                         <button @click="borrowBookList()" type="button" class="btn btn-outline-primary mt-3 ml-3">
@@ -56,7 +57,7 @@
                                     <span v-if="borrowbook.ngaytra">{{ formatDate(borrowbook.ngaytra) }}</span>
                                     <span v-else class="text-danger">Chưa trả sách</span>
                                 </td>
-                                <td>{{ borrowbook.madocgia.holot }} {{ borrowbook.madocgia.ten }}</td>
+                                 <td>{{ borrowbook.madocgia.holot }} <!--{{ borrowbook.madocgia.ten }} --></td>
                                 <td>
                                     <button v-if="!borrowbook.ngaytra" @click="handleReceive(borrowbook._id)"
                                         class="btn btn-outline-success mx-1">

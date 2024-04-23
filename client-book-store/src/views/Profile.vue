@@ -1,14 +1,14 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <header class="jumbotron">
       <h3>
-        <strong>Hello To Profile</strong>
+        <strong><center>Hello To Profile</center></strong>
       </h3>
     </header>
-    <p>
+    <!-- <p>
       <strong>Token:</strong>
       {{ currentUser.token }}
-    </p>
+    </p> -->
   </div>
 </template>
 

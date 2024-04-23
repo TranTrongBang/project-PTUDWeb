@@ -1,6 +1,6 @@
 <template>
     <layout-div>
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="text-center mt-5 mb-3">Sách</h2>
             <div class="card">
                 <div class="card-header">

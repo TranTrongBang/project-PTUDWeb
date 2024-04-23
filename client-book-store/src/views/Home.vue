@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <header class="jumbotron">
-      <h3>Chào mừng bạn đến với Trang Quản lý Sách</h3>
+      <h3><center>Chào mừng bạn đến với Trang Quản lý Sách</center></h3>
     </header>
   </div>
 </template>

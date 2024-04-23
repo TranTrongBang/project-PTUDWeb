@@ -1,6 +1,6 @@
 <template>
     <layout-div>
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="text-center mt-5 mb-3">Sách</h2>
             <div class="card">
                 <div class="card-header">
@@ -9,10 +9,6 @@
                             <label htmlFor="name">Tên Sách</label>
                             <input v-model="search.tensach" type="text" class="form-control" id="tennxb"
                                 name="tennxb" />
-                        </div>
-                        <div class="form-group flex-grow-1 mr-2 mb-0">
-                            <label htmlFor="name">Tên Sách</label>
-                            <input v-model="search.tacgia" type="text" class="form-control" id="tennxb" name="tennxb" />
                         </div>
                         <div class="form-group">
                             <label htmlFor="publishingCompany">Tác giả:</label>
